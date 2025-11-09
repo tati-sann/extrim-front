@@ -1,6 +1,24 @@
 {
-  "$schema": "https://json.schemastore.org/prettierrc",
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
-  "printWidth": 100
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^\\u0000",
+    "^node:",
+    "^@?\\w",
+    "^@/",
+    "^\\.\\.(?!/?$)",
+    "^\\.\\./?$",
+    "^\\./(?=.*/)(?!/?$)",
+    "^\\.(?!/?$)",
+    "^\\./?$",
+    "^.+\\.s?css$"
+  ],
+  "importOrderSeparation": false,
+  "importOrderSortSpecifiers": true
 }
