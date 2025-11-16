@@ -1,5 +1,4 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.node.json",
   "compilerOptions": {
     "composite": true,
     "skipLibCheck": true,
@@ -8,13 +7,13 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noEmit": true,
-    "types": ["node"]
+    "types": ["node"],
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "moduleDetection": "force"
   },
   "include": [
-    "vite.config.*",
-    "vitest.config.*",
-    "cypress.config.*",
-    "nightwatch.conf.*",
-    "eslint.config.*"
+    "vite.config.ts",
+    "vitest.config.ts"
   ]
 }
